@@ -1,0 +1,117 @@
+/* @font-face {
+  font-family: 'elektra';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/font/elektra.ttf') format('truetype');
+} */
+
+@font-face {
+  font-family: 'folkard';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/font/folkard.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'lifecraft';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/font/lifecraft.ttf') format('truetype');
+}
+
+/* @font-face {
+  font-family: 'lifecraft';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/font/mara2v2.ttf') format('truetype');
+} */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+/* @font-face {
+  font-family: 'primary';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/font/primary.ttf') format('truetype');
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply minsm:max-w-[640px] minmd:max-w-[768px] minlg:max-w-[1024px] minxl:max-w-[1150px] min2xl:max-w-[1440px] mx-auto p-4;
+  }
+
+  .animation_blink {
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .primary_color_animation {
+    animation-name: primary-animate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  @apply text-gray-300 font-folk tracking-wider text-lg;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes primary-animate {
+  0% {
+    @apply text-primary;
+  }
+  50% {
+    @apply text-white;
+  }
+  100% {
+    @apply text-primary;
+  }
+}
+
+/* .vertical-timeline::before {
+  --line-color: rgb(255, 0, 0);
+}
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: #424242;
+}
+
+
+.vertical-timeline.vertical-timeline-custom-line
+  .vertical-timeline-element--work
+  .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #1976d2, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.vertical-timeline.vertical-timeline-custom-line
+  .vertical-timeline-element--education
+  .vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #c2185b, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+} */
