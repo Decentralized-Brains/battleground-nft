@@ -135,13 +135,14 @@ export default function Home() {
         <img
           src={Image3.src}
           className="h-screen w-full object-cover absolute -z-10"
-          // alt='Battleground'
+          alt=""
         />
 
         <div className="absolute flex flex-col items-center h-full w-full">
           <img
             src={Logo.src}
             className="z-20 mt-20 w-[500px] sm:w-[200px] rounded-full overflow-hidden"
+            alt=""
           />
           {/* <h1 className='text-9xl font-bold font-life'>Battleground</h1>
           <div className='w-48 h-1 bg-primary mt-2' /> */}
