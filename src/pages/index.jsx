@@ -1,4 +1,5 @@
-import Image1 from "../assets/images/pengzhen-zhang-1.jpg";
+/* eslint-disable @next/next/no-img-element */
+// import Image1 from "../assets/images/pengzhen-zhang-1.jpg";
 import Roadmap from "../components/roadmap";
 import Fade from "react-reveal/Fade";
 import NavBar from "../components/NavBar";
@@ -7,7 +8,7 @@ import { FaTwitter, FaDiscord } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import Link from "next/link";
 import Footer from "../components/footer";
-import Popup from "reactjs-popup";
+// import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import RelicHover from "../components/RelicHover";
 import { PieChart } from "react-minimal-pie-chart";
@@ -15,7 +16,7 @@ import Image3 from "../assets/images/viking-ship.png";
 import Logo from "../assets/logo.png";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
-import ReactPageScroller from "react-page-scroller";
+// import ReactPageScroller from "react-page-scroller";
 
 function Header({ title, className }) {
   return (
