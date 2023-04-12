@@ -75,6 +75,12 @@ export default function NavBar({ className }) {
                   Welcome
                 </a>
               </Link>
+              <Link href="/#mint">
+                <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
+                  Mint
+                </a>
+              </Link>
+
               <Link href="/#about">
                 <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
                   About
@@ -104,6 +110,12 @@ export default function NavBar({ className }) {
                   Docs
                 </a>
               </Link>
+
+              <button>
+                <div className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
+                  Connect
+                </div>
+              </button>
               {/* <Link href='/#docs'>
                 <a className='cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-xs italic text-gray-300'>
                   Docs

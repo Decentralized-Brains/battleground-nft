@@ -44,13 +44,6 @@ export default function Footer() {
         <div className="font-life md:text-center">
           ©{new Date().getFullYear()} Battleground. All rights reserved.
         </div>
-
-        <p className="text-base sm:text-sm md:mt-5">
-          Crafted by{" "}
-          <a href="http://webcraft.lk/" target={"_blank"} rel="noreferrer">
-            WebCraft.lk
-          </a>
-        </p>
       </div>
     </footer>
   );
