@@ -15,24 +15,24 @@ export default function NavBar({ className }) {
   const [showNav, setShowNav] = useState(false);
   // const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      // setScrollY(window.scrollY);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     // setScrollY(window.scrollY);
 
-      if (window.scrollY > 100) {
-        setShowNav(true);
-      } else {
-        setShowNav(false);
-      }
-    };
-    handleScroll();
+  //     if (window.scrollY > 0) {
+  //       setShowNav(true);
+  //     } else {
+  //       setShowNav(false);
+  //     }
+  //   };
+  //   handleScroll();
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   return (
     <nav
@@ -40,7 +40,7 @@ export default function NavBar({ className }) {
         "w-full transition-all flex items-center text-space z-50 bg-[#00000050] backdrop-blur-xl",
         {
           "md:h-screen": isOpen,
-          "-mt-60": !showNav,
+          // "-mt-60": !showNav,
         },
         className
       )}
@@ -75,11 +75,6 @@ export default function NavBar({ className }) {
                   Welcome
                 </a>
               </Link>
-              <Link href="/#mint">
-                <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
-                  Mint
-                </a>
-              </Link>
 
               <Link href="/#about">
                 <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
@@ -111,11 +106,6 @@ export default function NavBar({ className }) {
                 </a>
               </Link>
 
-              <button>
-                <div className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
-                  Connect
-                </div>
-              </button>
               {/* <Link href='/#docs'>
                 <a className='cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-xs italic text-gray-300'>
                   Docs
@@ -138,6 +128,17 @@ export default function NavBar({ className }) {
             }
           )}
         >
+          <Link href="/#relic">
+            <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
+              Connect
+            </a>
+          </Link>
+          <Link href="/#relic">
+            <a className="pr-6 md:pr-0 cursor-pointer text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic hover:text-gray-300">
+              Mint
+            </a>
+          </Link>
+
           {/* socials */}
           <div className="flex items-center gap-3">
             <Link href="https://discord.gg/RxPKemgg">

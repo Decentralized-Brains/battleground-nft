@@ -248,46 +248,6 @@ export default function Home() {
         </Fade>
       </section>
 
-      {/* Minting Desing and Animation start*/}
-      <section className="container px-10 md:px-2 py-32" id="mint">
-        <Fade bottom>
-          <Header title="Mint" />
-          <div className="">
-            <p className="mt-5 md:w-full">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              sequi, libero voluptatum tempore voluptatem ipsa quae error
-              inventore iure autem. Nostrum sapiente dolores similique numquam
-              laborum accusamus, totam accusantium quis. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Repellat sequi, libero
-              voluptatum tempore voluptatem ipsa quae error inventore iure
-              autem. Nostrum sapiente dolores similique numquam laborum
-              accusamus, totam accusantium quis. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Repellat sequi, libero voluptatum
-              tempore voluptatem ipsa quae error inventore iure autem. Nostrum
-              sapiente dolores similique numquam laborum accusamus, totam
-              accusantium quis.
-            </p>
-            <div className="flex justify-center items-center flex-col mt-5">
-              <video
-                className="aspect-square w-80 object-cover"
-                autoPlay
-                muted
-                loop
-                playsInline
-              >
-                <source src="/assets/videos/3.mp4" type="video/mp4" />
-              </video>
-
-              <button className="mt-10 hover:text-primary">
-                Click To Mint
-              </button>
-            </div>
-          </div>
-        </Fade>
-      </section>
-
-      {/* Minting Desing and Animation end*/}
-
       {/* <div className='border-t-[1px] border-blue-200' /> */}
 
       <section className="container px-10 md:px-2 py-32" id="about">
