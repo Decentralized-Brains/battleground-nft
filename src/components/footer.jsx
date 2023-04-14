@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="flex md:flex-col md:pt-2 items-center justify-between">
+      <div className="flex md:flex-col md:pt-2 items-center justify-center">
         <div className="font-life md:text-center">
           ©{new Date().getFullYear()} Battleground. All rights reserved.
         </div>

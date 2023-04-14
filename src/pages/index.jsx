@@ -378,7 +378,7 @@ export default function Home() {
 
       {/* <div className='border-t-[1px] border-blue-200 container' /> */}
 
-      <div className="bg-gray-100 pt-20">
+      <div className=" pt-20">
         <section className="container mx-auto">
           {/* <Header title='Tokenomics' className='text-center' />*/}
 
@@ -408,13 +408,13 @@ export default function Home() {
                 }
                 labelPosition={70}
                 labelStyle={{
-                  fill: "#fff",
+                  fill: "#000000",
                   opacity: 0.75,
                   pointerEvents: "none",
                 }}
               />
 
-              <div className="flex flex-col py-5 gap-6">
+              <div className="flex flex-col py-5 gap-2 justify-center">
                 {pieData.map((item) => {
                   return (
                     <div
