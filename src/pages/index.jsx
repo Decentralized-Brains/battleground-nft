@@ -82,6 +82,9 @@ export default function Home() {
     "Battle Royale, NFT GAME, DUELS, Factions, Betting, MINT NFTS, STAKING";
 
   // console.log({ opacity });
+
+  const [account, setAccount] = useState("");
+
   return (
     <>
       <NextSeo
@@ -116,7 +119,7 @@ export default function Home() {
         alt="Battleground"
       />
 
-      <NavBar className="fixed top-0 left-0" />
+      <NavBar className="fixed top-0 left-0" account={account} setAccount={setAccount} />
       {/* <section className='container mb-12 px-5 md:px-2'>
         <Fade>
           <img className='h-[715px] object-cover mt-20' src={Image1.src} />
