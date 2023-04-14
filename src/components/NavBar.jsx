@@ -100,7 +100,7 @@ export default function NavBar({ className }) {
                 </a>
               </Link>
 
-              <Link href="/#relic">
+              <Link href="">
                 <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
                   Docs
                 </a>
