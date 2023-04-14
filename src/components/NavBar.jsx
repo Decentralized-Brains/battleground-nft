@@ -128,16 +128,16 @@ export default function NavBar({ className }) {
             }
           )}
         >
-          <Link href="/#relic">
-            <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
+          <button>
+            <span className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
               Connect
-            </a>
-          </Link>
-          <Link href="/#relic">
-            <a className="pr-6 md:pr-0 cursor-pointer text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic hover:text-gray-300">
+            </span>
+          </button>
+          <button>
+            <span className="pr-6 md:pr-0 cursor-pointer text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic hover:text-gray-300">
               Mint
-            </a>
-          </Link>
+            </span>
+          </button>
 
           {/* socials */}
           <div className="flex items-center gap-3">
