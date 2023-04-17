@@ -119,7 +119,11 @@ export default function Home() {
         alt="Battleground"
       />
 
-      <NavBar className="fixed top-0 left-0" account={account} setAccount={setAccount} />
+      <NavBar
+        className="fixed top-0 left-0"
+        account={account}
+        setAccount={setAccount}
+      />
       {/* <section className='container mb-12 px-5 md:px-2'>
         <Fade>
           <img className='h-[715px] object-cover mt-20' src={Image1.src} />
@@ -170,7 +174,7 @@ export default function Home() {
               the development of the ecosystem that will represent the playable
               characters in the battleground metaverse. The warrior NFTs are
               composed of 3 factions: Vikings, Samurai and Gladiator. Each has
-              their own unique fighting styles, traits, and abilities.
+              their own Unique Fighting Styles, Traits, and Abilities.
             </p>
           </div>
 
@@ -285,13 +289,13 @@ export default function Home() {
                 <span className="text-orange-400 font-normal">(Arena)</span>
               </h3>
               <div>
-                <ul className="ml-14 sm:ml-8">
+                <ul className="ml-14 sm:ml-8 list-disc">
                   <li>
-                    - Arena, Warrior&apos;s can be deployed into Cage Matches,
+                    Arena, Warrior&apos;s can be deployed into Cage Matches,
                     1v1&apos;s, 2v2s, 3v3s
                   </li>
-                  <li>- Brawl (4-12 Warriors)</li>
-                  <li>- Round of 16 Tournament </li>
+                  <li>Brawl (4-12 Warriors)</li>
+                  <li>Round of 16 Tournament </li>
                 </ul>
               </div>
             </div>
@@ -303,14 +307,14 @@ export default function Home() {
                   (Battleground Smash)
                 </span>
               </h3>
-              <div>
-                <p className="ml-14 sm:ml-8">
+              <ul>
+                <li className="ml-14 sm:ml-8 list-disc">
                   Battleground Smash, a &quot;Super Smash Bros&quot; style of
                   Gameplay. Fighter&apos;s will be placed in a moving frame with
                   two lives, those who exit this field of view will lose a life.
                   The last player standing will be declared the winner.
-                </p>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <div className="mt-20">
@@ -320,13 +324,13 @@ export default function Home() {
                   (Battleground Royale)
                 </span>
               </h3>
-              <div>
-                <p className="ml-14 sm:ml-8">
+              <ul className="ml-14 sm:ml-8 list-disc">
+                <li>
                   Battleground Royale, an interactive play to earn Battle Royale
                   game mode playable on Xbox, PS4, PC, and Oculus VR (TBA).
-                  <br />- Additional Game Modes determined by Community
-                </p>
-              </div>
+                </li>
+                <li>Additional Game Modes determined by Community</li>
+              </ul>
             </div>
           </div>
         </Fade>
@@ -350,20 +354,15 @@ export default function Home() {
 
           <div className="flex sm:flex-col sm:items-center gap-5">
             <p className="mt-5">
-              $Relic is the utility token of the Battleground Ecosystem.
-              <br />
-              All in game purchases, wagers and the mint of the last faction
-              will be in the $Relic.
-              <br />
-              Following the mint of the Viking Faction, staking options for
-              battleground NFTs will become available.
-              <br />
-              NFT stakers will receive daily $Relic token yield usable for in
-              game assets and future warrior collections
-              <br />
-              Upon the release of the Battleground Beta, Warriors will be able
-              to use $Relic tokens accrued to upgrade their warriors in game
-              attributes to improve in-game $Relic rewards.
+              $Relic is the utility token of the Battleground Ecosystem. All in
+              game purchases, wagers and the mint of the last faction will be in
+              the $Relic. Following the mint of the Viking Faction, staking
+              options for battleground NFTs will become available. NFT stakers
+              will receive daily $Relic token yield usable for in game assets
+              and future warrior collections. Upon the release of the
+              Battleground Beta, Warriors will be able to use $Relic tokens
+              accrued to upgrade their warriors in game attributes to improve
+              in-game $Relic rewards.
             </p>
 
             <video
