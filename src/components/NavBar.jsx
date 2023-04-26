@@ -65,7 +65,7 @@ export default function NavBar({ className, account, setAccount }) {
     setAccount("");
   };
 
-  const smartcontractAddress = "0x8f3b9ac429646d77b4812a9dd8405839e8f08aaf";
+  const smartcontractAddress = "0xAb1F8a6c7d9294BA69bA060765D3a52bcC7A807a";
   let signer = null;
   let provider = null;
   if (typeof window !== "undefined") {
@@ -79,9 +79,13 @@ export default function NavBar({ className, account, setAccount }) {
 
   // Minting portion
   const mintButtonClick = async () => {
+    const price = ethers.parseEther("0.00000000000000001");
     signer = await provider.getSigner();
     let contract = new ethers.Contract(smartcontractAddress, storeABI, signer);
-    await contract.safeMint(account);
+    await contract.safeMint({
+      value: price,
+      gasLimit:3e4
+    });
     toast.success("Minting will be add to Chain.");
   };
 
