@@ -65,7 +65,7 @@ export default function NavBar({ className, account, setAccount }) {
     setAccount("");
   };
 
-  const smartcontractAddress = "0xAb1F8a6c7d9294BA69bA060765D3a52bcC7A807a";
+  const smartcontractAddress = "0x766A95F8c5439D9ea987c3B0D62b53b9507FA3D2";
   let signer = null;
   let provider = null;
   if (typeof window !== "undefined") {
@@ -79,14 +79,27 @@ export default function NavBar({ className, account, setAccount }) {
 
   // Minting portion
   const mintButtonClick = async () => {
-    const price = ethers.parseEther("0.00000000000000001");
     signer = await provider.getSigner();
     let contract = new ethers.Contract(smartcontractAddress, storeABI, signer);
-    await contract.safeMint({
-      value: price,
-      gasLimit:3e4
-    });
-    toast.success("Minting will be add to Chain.");
+    let randomNumber
+
+    try {
+      while (true) {
+        randomNumber = Math.floor(Math.random() * 3);
+        let breedCounter = await contract.breedCount(randomNumber)
+        let breedLimit = await contract.breedLimit(randomNumber)
+        if (breedCounter < breedLimit) {
+          break
+        }
+        else {
+          continue
+        }
+      }
+      await contract.safeMint(randomNumber);
+      toast.success("Minting will be add to Chain.");
+    } catch (error) {
+      console.log('Getting Some Error.........')
+    }
   };
 
   return (
