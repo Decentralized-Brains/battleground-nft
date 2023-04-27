@@ -59,13 +59,14 @@ export default function NavBar({ className, account, setAccount }) {
       console.log("Error connecting...");
     }
   };
+
   // logout meta
   const logoutMeta = async () => {
     toast.success("Wallet Disconnected!");
     setAccount("");
   };
 
-  const smartcontractAddress = "0x8f3b9ac429646d77b4812a9dd8405839e8f08aaf";
+  const smartcontractAddress = "0x766A95F8c5439D9ea987c3B0D62b53b9507FA3D2";
   let signer = null;
   let provider = null;
   if (typeof window !== "undefined") {
@@ -81,8 +82,25 @@ export default function NavBar({ className, account, setAccount }) {
   const mintButtonClick = async () => {
     signer = await provider.getSigner();
     let contract = new ethers.Contract(smartcontractAddress, storeABI, signer);
-    await contract.safeMint(account);
-    toast.success("Minting will be add to Chain.");
+    let randomNumber;
+
+    try {
+      while (true) {
+        randomNumber = Math.floor(Math.random() * 3);
+        let breedCounter = await contract.breedCount(randomNumber);
+        let breedLimit = await contract.breedLimit(randomNumber);
+        if (breedCounter < breedLimit) {
+          break;
+        }
+        else {
+          continue;
+        }
+      }
+      await contract.safeMint(randomNumber);
+      toast.success("Minting Called. Wait for complete transaction");
+    } catch (error) {
+      console.log('Getting Some Error.........');
+    }
   };
 
   return (
