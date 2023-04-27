@@ -100,8 +100,8 @@ export default function Home() {
           images: [
             {
               url: canoniaclURL + LinkSeoImg.src,
-              width: 800,
-              height: 800,
+              width: 600,
+              height: 400,
               alt: title,
               type: "image/png",
             },
