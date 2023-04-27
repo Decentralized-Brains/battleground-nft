@@ -561,7 +561,7 @@ export default function Home() {
         </p>
 
         <div className="flex items-center md:justify-center gap-10">
-          <Link href="https://discord.gg/655jv8agAE" target="_blank">
+          <Link href="https://discord.com/invite/655jv8agAE" target="_blank">
             <a target="_blank">
               <FaDiscord className="hover:text-white h-7 w-7 cursor-pointer transition-all" />
             </a>
