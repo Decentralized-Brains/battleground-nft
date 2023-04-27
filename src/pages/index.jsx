@@ -207,7 +207,7 @@ export default function Home() {
             </div>
 
             <div>
-              <RelicHover videoUrl="/assets/videos/2.mp4" title="Epic Relic" />
+              <RelicHover videoUrl="/assets/videos/2.mp4" title="Rare Relic" />
               <p className="mt-5 text-center h-20 sm:h-fit">
                 Eligible for 1/1000 Rare Warrior <br />
                 Higher Staking rewards <br />
