@@ -108,7 +108,7 @@ export default function NavBar({ className, account, setAccount }) {
         "w-full transition-all flex items-center text-space z-50 bg-[#00000050] backdrop-blur-xl",
         {
           "md:h-screen": isOpen,
-          // "-mt-60": !showNav,
+          //"-mt-60": !showNav,
         },
         className
       )}

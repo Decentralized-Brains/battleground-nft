@@ -14,7 +14,7 @@ import RelicHover from "../components/RelicHover";
 import { PieChart } from "react-minimal-pie-chart";
 import Image3 from "../assets/images/viking-ship.png";
 import Logo from "../assets/logo.png";
-import LinkSeoImg from "../assets/link-bg.png";
+import LinkSeoImg from "../assets/link-bg.jpg";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 // import ReactPageScroller from "react-page-scroller";
@@ -100,8 +100,8 @@ export default function Home() {
           images: [
             {
               url: canoniaclURL + LinkSeoImg.src,
-              width: 600,
-              height: 400,
+              width: 800,
+              height: 800,
               alt: title,
               type: "image/png",
             },
