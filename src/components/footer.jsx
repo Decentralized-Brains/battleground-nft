@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className="flex justify-end sm:justify-center sm:mt-9">
           <div className="flex items-center gap-5">
-            <Link href="https://discord.gg/RxPKemgg">
+            <Link href="https://discord.com/invite/655jv8agAE">
               <a target="_blank">
                 <FaDiscord className="hover:text-primary h-8 w-8 cursor-pointer transition-all" />
               </a>

@@ -14,6 +14,7 @@ import RelicHover from "../components/RelicHover";
 import { PieChart } from "react-minimal-pie-chart";
 import Image3 from "../assets/images/viking-ship.png";
 import Logo from "../assets/logo.png";
+import LinkSeoImg from "../assets/link-bg.png";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 // import ReactPageScroller from "react-page-scroller";
@@ -76,7 +77,7 @@ export default function Home() {
   const description =
     "The Battleground is a Play-to-Earn &quot;fight-verse&quot; ecosystem that bridges the gap between the gaming, gambling, and social community. 3,333 unique warrior NFTs will be minted during the development of the ecosystem that will represent the playable characters in the battleground metaverse";
   const title =
-    "The Battleground | Play-to-Earn &quot;fight-verse&quot; ecosystem";
+    "The Battleground | Play-to-Earn &quot;Fight-Verse&quot; ecosystem";
   const canoniaclURL = "https://thebattleground.io";
   const keywords =
     "Battle Royale, NFT GAME, DUELS, Factions, Betting, MINT NFTS, STAKING";
@@ -98,7 +99,7 @@ export default function Home() {
           description: description,
           images: [
             {
-              url: canoniaclURL + Logo.src,
+              url: canoniaclURL + LinkSeoImg.src,
               width: 800,
               height: 800,
               alt: title,
@@ -572,7 +573,7 @@ export default function Home() {
             </a>
           </Link>
 
-          <Link href="https://linktr.ee/battlegroundxyz" target="_blank">
+          <Link href="https://linktr.ee/thebattleground.io" target="_blank">
             <a target="_blank">
               <SiLinktree className="hover:text-white h-7 w-7 cursor-pointer transition-all" />
             </a>
