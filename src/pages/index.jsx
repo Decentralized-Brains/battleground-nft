@@ -99,7 +99,7 @@ export default function Home() {
           description: description,
           images: [
             {
-              url: canoniaclURL + LinkSeoImg.src,
+              url: LinkSeoImg.src,
               width: 800,
               height: 800,
               alt: title,
