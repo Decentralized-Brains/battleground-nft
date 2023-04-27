@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { ethers } from "ethers";
-import Web3 from 'web3';
+import Web3 from "web3";
 import { BrowserProvider, parseUnits } from "ethers";
 import React, { useEffect, useState } from "react";
 import classnames from "classnames";
@@ -14,7 +14,7 @@ import { VscCloseAll } from "react-icons/vsc";
 import classNames from "classnames";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import storeABI from './contracts/StoreABI';
+import storeABI from "./contracts/StoreABI";
 
 export default function NavBar({ className, account, setAccount }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -43,17 +43,17 @@ export default function NavBar({ className, account, setAccount }) {
   // CONNECT WALLET
   const connectWallet = async () => {
     try {
-      await window.ethereum.request({ method: 'eth_requestAccounts' });
+      await window.ethereum.request({ method: "eth_requestAccounts" });
       const web3 = new Web3(window.ethereum);
       const accounts = await web3.eth.getAccounts();
       setAccount(accounts[0]);
 
       toast.warn(
         "Wallet " +
-        accounts[0].slice(0, 4) +
-        "...." +
-        accounts[0].slice(accounts[0].length - 4, accounts[0].length) +
-        " connected!"
+          accounts[0].slice(0, 4) +
+          "...." +
+          accounts[0].slice(accounts[0].length - 4, accounts[0].length) +
+          " connected!"
       );
     } catch (error) {
       console.log("Error connecting...");
@@ -91,15 +91,14 @@ export default function NavBar({ className, account, setAccount }) {
         let breedLimit = await contract.breedLimit(randomNumber);
         if (breedCounter < breedLimit) {
           break;
-        }
-        else {
+        } else {
           continue;
         }
       }
       await contract.safeMint(randomNumber);
       toast.success("Minting Called. Wait for complete transaction");
     } catch (error) {
-      console.log('Getting Some Error.........');
+      console.log("Getting Some Error.........");
     }
   };
 
@@ -179,8 +178,11 @@ export default function NavBar({ className, account, setAccount }) {
                 </a>
               </Link>
 
-              <Link href="">
-                <a className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
+              <Link href="https://battleground.gitbook.io/untitled/">
+                <a
+                  target="_blank"
+                  className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300"
+                >
                   Docs
                 </a>
               </Link>
@@ -212,8 +214,8 @@ export default function NavBar({ className, account, setAccount }) {
             <span className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
               {account
                 ? account.slice(0, 4) +
-                "..." +
-                account.slice(account.length - 4, account.length)
+                  "..." +
+                  account.slice(account.length - 4, account.length)
                 : "Connect Wallet "}
             </span>
           </button>
@@ -233,7 +235,7 @@ export default function NavBar({ className, account, setAccount }) {
           </button>
           {/* socials */}
           <div className="flex items-center gap-3">
-            <Link href="https://discord.gg/RxPKemgg">
+            <Link href="https://discord.com/invite/655jv8agAE">
               <a target="_blank">
                 <FaDiscord className="hover:text-primary h-5 w-5 cursor-pointer transition-all" />
               </a>
