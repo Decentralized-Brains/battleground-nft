@@ -14,7 +14,7 @@ import RelicHover from "../components/RelicHover";
 import { PieChart } from "react-minimal-pie-chart";
 import Image3 from "../assets/images/viking-ship.png";
 import Logo from "../assets/logo.png";
-import LinkSeoImg from "../assets/link-bg.jpg";
+import LinkSeoImg from "../assets/link-bg.png";
 import { useEffect, useState } from "react";
 import { NextSeo } from "next-seo";
 // import ReactPageScroller from "react-page-scroller";
