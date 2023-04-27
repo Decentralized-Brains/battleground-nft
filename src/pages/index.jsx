@@ -78,7 +78,7 @@ export default function Home() {
     "The Battleground is a Play-to-Earn &quot;fight-verse&quot; ecosystem that bridges the gap between the gaming, gambling, and social community. 3,333 unique warrior NFTs will be minted during the development of the ecosystem that will represent the playable characters in the battleground metaverse";
   const title =
     "The Battleground | Play-to-Earn &quot;Fight-Verse&quot; ecosystem";
-  const canoniaclURL = "https://thebattleground.io";
+  const canoniaclURL = "http://149.28.47.33:3000";
   const keywords =
     "Battle Royale, NFT GAME, DUELS, Factions, Betting, MINT NFTS, STAKING";
 
@@ -101,7 +101,7 @@ export default function Home() {
             {
               url: canoniaclURL + LinkSeoImg.src,
               width: 800,
-              height: 800,
+              height: 400,
               alt: title,
               type: "image/png",
             },
