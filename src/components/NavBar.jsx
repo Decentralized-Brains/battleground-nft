@@ -50,10 +50,10 @@ export default function NavBar({ className, account, setAccount }) {
 
       toast.warn(
         "Wallet " +
-          accounts[0].slice(0, 4) +
-          "...." +
-          accounts[0].slice(accounts[0].length - 4, accounts[0].length) +
-          " connected!"
+        accounts[0].slice(0, 4) +
+        "...." +
+        accounts[0].slice(accounts[0].length - 4, accounts[0].length) +
+        " connected!"
       );
     } catch (error) {
       console.log("Error connecting...");
@@ -66,7 +66,7 @@ export default function NavBar({ className, account, setAccount }) {
     setAccount("");
   };
 
-  const smartcontractAddress = "0x766A95F8c5439D9ea987c3B0D62b53b9507FA3D2";
+  const smartcontractAddress = "0xEb4CCDBA47167C0e4D4e5EcE36cD07bf8BaBD3ee";
   let signer = null;
   let provider = null;
   if (typeof window !== "undefined") {
@@ -82,7 +82,7 @@ export default function NavBar({ className, account, setAccount }) {
   const mintButtonClick = async () => {
     signer = await provider.getSigner();
     let contract = new ethers.Contract(smartcontractAddress, storeABI, signer);
-    let randomNumber;
+    let randomNumber = null;
 
     try {
       while (true) {
@@ -214,8 +214,8 @@ export default function NavBar({ className, account, setAccount }) {
             <span className="cursor-pointer hover:text-primary transition-all md:text-sm font-life tracking-[0.2em] text-lg italic text-gray-300">
               {account
                 ? account.slice(0, 4) +
-                  "..." +
-                  account.slice(account.length - 4, account.length)
+                "..." +
+                account.slice(account.length - 4, account.length)
                 : "Connect Wallet "}
             </span>
           </button>
