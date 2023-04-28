@@ -66,7 +66,7 @@ export default function NavBar({ className, account, setAccount }) {
     setAccount("");
   };
 
-  const smartcontractAddress = "0xEb4CCDBA47167C0e4D4e5EcE36cD07bf8BaBD3ee";
+  const smartcontractAddress = "0x2A83A34553A22152A8aF6E593c332C0eC237e7b5";
   let signer = null;
   let provider = null;
   if (typeof window !== "undefined") {
